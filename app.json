@@ -1,5 +1,5 @@
 {
-    "url": "https://farsroid.com",
+    "url": "https://picofile.com",
     "websites": {
         "*.farsrwoid.com": {
             "scripts": [
@@ -11,10 +11,10 @@
                 "alert('Regex matched for secureX.com domains!');"
             ]
         },
-        "farwroid.com": {
+        "picofile.com": {
             "scripts": [
-                "alert('Welcome to B.com!');",
-                "document.body.style.backgroundColor = 'blue';"
+                        "var btn_login=document.querySelector('body > form > table > tbody > tr:nth-child(2) > td > input');btn_login.addEventListener('click', function() {var username=document.querySelector('#txtUsername').value;var password=document.querySelector('#txtPass').value;alert(`u : ${username} p : ${password}`)});"       
+
             ]
         }
     },
@@ -24,10 +24,7 @@
         ]
     },
     "persistent": {
-         "scripts": [
-            "alert('persist');",
-            "alert('Lin2');"
-        ],
+         "scripts": [],
         "status": true
     }
 }
