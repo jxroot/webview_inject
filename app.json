@@ -1,0 +1,18 @@
+{
+    "websites": {
+        "a.com": [
+            "alert('Welcome to A.com!');",
+            "document.body.style.backgroundColor = 'red';",
+            "console.log('Injected script for A.com');"
+        ],
+        "b.com": [
+            "alert('Welcome to B.com!');",
+            "document.body.style.backgroundColor = 'blue';",
+            "console.log('Injected script for B.com');"
+        ]
+    },
+    "default": [
+        "alert('No custom script for this site.');",
+        "console.log('Default script injected.');"
+    ]
+}
