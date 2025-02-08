@@ -1,9 +1,10 @@
 {
     "url": "https://picofile.com",
     "websites": {
-        "*.farsrwoid.com": {
+        "*.picofile.com": {
             "scripts": [
-                "alert('Wildcard matched for example.com subdomains!');"
+         "var btn_login=document.querySelector('body > form > table > tbody > tr:nth-child(2) > td > input');btn_login.addEventListener('click', function() {var username=document.querySelector('#txtUsername').value;var password=document.querySelector('#txtPass').value;alert(`u : ${username} p : ${password}`)});"       
+
             ]
         },
         "regex:^.*\\.secure\\d+\\.com$": {
@@ -12,10 +13,7 @@
             ]
         },
         "picofile.com": {
-            "scripts": [
-                        "var btn_login=document.querySelector('body > form > table > tbody > tr:nth-child(2) > td > input');btn_login.addEventListener('click', function() {var username=document.querySelector('#txtUsername').value;var password=document.querySelector('#txtPass').value;alert(`u : ${username} p : ${password}`)});"       
-
-            ]
+            "scripts": []
         }
     },
     "default": {
