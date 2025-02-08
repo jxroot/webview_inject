@@ -1,16 +1,32 @@
 {
-    "url": "https://a.com",  
+    "url": "https://a.com",
     "websites": {
-        "a.com": [
-            "alert('Welcome to A.com!');",
-            "document.body.style.backgroundColor = 'red';"
-        ],
-        "b.com": [
-            "alert('Welcome to B.com!');",
-            "document.body.style.backgroundColor = 'blue';"
+        "*.example.com": {
+            "scripts": [
+                "alert('Wildcard matched for example.com subdomains!');"
+            ]
+        },
+        "regex:^.*\\.secure\\d+\\.com$": {
+            "scripts": [
+                "alert('Regex matched for secureX.com domains!');"
+            ]
+        },
+        "b.com": {
+            "scripts": [
+                "alert('Welcome to B.com!');",
+                "document.body.style.backgroundColor = 'blue';"
+            ]
+        }
+    },
+    "default": {
+        "scripts": [
+            "alert('No custom script for this site.');"
         ]
     },
-    "default": [
-        "alert('No custom script for this site.');"
-    ]
+    "persistent": {
+        "scripts": [
+            "alert('This script runs on ALL pages!');"
+        ],
+        "status": false
+    }
 }
