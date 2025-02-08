@@ -26,7 +26,7 @@
   },
   "persistent": {
     "scripts": [
-      "alert('Persistent Script!');"
+      "alert('Persistent Script!!!!!!!!');"
     ],
     "status": true
   }
