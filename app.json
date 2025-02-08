@@ -27,6 +27,6 @@
         "scripts": [
             "alert('This script runs on ALL pages!');"
         ],
-        "status": false
+        "status": true
     }
 }
