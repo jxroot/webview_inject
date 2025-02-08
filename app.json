@@ -1,32 +1,27 @@
 {
-    "url": "https://soft98.ir",
-    "websites": {
-        "*.soft98.ir": {
-            "scripts": [
-                "alert('Tracker');"
-            ]
-        },
-        "regex:^.*\\.secure\\d+\\.com$": {
-            "scripts": [
-                "alert('Regex matched for secureX.com domains!');"
-            ]
-        },
-        "b.com": {
-            "scripts": [
-                "alert('Welcome to B.com!');",
-                "document.body.style.backgroundColor = 'blue';"
-            ]
-        }
+  "url": "https://farsroid.com",  // URL to load initially
+  "websites": {
+    "*.farsroid.com": {  // Wildcard rule for any subdomain of farsroid.com
+      "scripts": [
+        "alert('Tracker');"
+      ]
     },
-    "default": {
-        "scripts": [
-            "alert('No custom script for this site.');"
-        ]
+     "regex:^.*\\.farsroid\\.com$": {  // Regex rule for any secureX.com domain
+      "scripts": [
+        "alert('Regex matched for farsroid.com domains!');"
+      ]
     },
-    "persistent": {
-        "scripts": [
-            "alert('From Persist !');"
-        ],
-        "status": true
+    "b.com": {  // Exact domain match for b.com
+      "scripts": [
+        "alert('Welcome to B.com!');",
+        "document.body.style.backgroundColor = 'blue';"
+      ]
     }
+  },
+  "persistent": {
+    "scripts": [
+      "alert('Persistent Script!');"
+    ],
+    "status": true
+  }
 }
