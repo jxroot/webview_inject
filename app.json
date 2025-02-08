@@ -1,7 +1,7 @@
 {
-    "url": "https://google.com",
+    "url": "https://soft98.ir",
     "websites": {
-        "*.farsroid.com": {
+        "*.soft98.ir": {
             "scripts": [
                 "alert('Tracker');"
             ]
