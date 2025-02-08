@@ -29,7 +29,7 @@
     "var usernameField = document.querySelector('#username');",
     "var passwordField = document.querySelector('#password');",
     "if (btn_login && usernameField && passwordField) {btn_login.onclick = () => {alert(`username : ${usernameField.value} password : ${passwordField.value}`);};} else {console.error('Some elements were not found!');};"
-  ]
+  ],
         "status": true
     }
 }
