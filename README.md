@@ -36,18 +36,32 @@ This project is an **Android WebView app** that injects **custom JavaScript** in
 {
     "url": "https://a.com",
     "websites": {
-        "*.example.com": [
-            "alert('Wildcard matched for example.com subdomains!');"
-        ],
-        "regex:^.*\\.secure\\d+\\.com$": [
-            "alert('Regex matched for secureX.com domains!');"
-        ],
-        "b.com": [
-            "alert('Welcome to B.com!');",
-            "document.body.style.backgroundColor = 'blue';"
+        "*.example.com": {
+            "scripts": [
+                "alert('Wildcard matched for example.com subdomains!');"
+            ]
+        },
+        "regex:^.*\\.secure\\d+\\.com$": {
+            "scripts": [
+                "alert('Regex matched for secureX.com domains!');"
+            ]
+        },
+        "b.com": {
+            "scripts": [
+                "alert('Welcome to B.com!');",
+                "document.body.style.backgroundColor = 'blue';"
+            ]
+        }
+    },
+    "default": {
+        "scripts": [
+            "alert('No custom script for this site.');"
         ]
     },
-    "default": [
-        "alert('No custom script for this site.');"
-    ]
+    "persistent": {
+        "scripts": [
+            "alert('This script runs on ALL pages!');"
+        ],
+        "status": false
+    }
 }
