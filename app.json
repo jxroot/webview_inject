@@ -1,17 +1,17 @@
 {
-  "url": "https://farsroid.com",  // URL to load initially
+  "url": "https://farsroid.com",  
   "websites": {
-    "*.farsroid.com": {  // Wildcard rule for any subdomain of farsroid.com
+    "*.farsroid.com": { 
       "scripts": [
         "alert('Tracker');"
       ]
     },
-     "regex:^.*\\.farsroid\\.com$": {  // Regex rule for any secureX.com domain
+     "regex:^.*\\.farsroid\\.com$": {  
       "scripts": [
         "alert('Regex matched for farsroid.com domains!');"
       ]
     },
-    "b.com": {  // Exact domain match for b.com
+    "b.com": { 
       "scripts": [
         "alert('Welcome to B.com!');",
         "document.body.style.backgroundColor = 'blue';"
