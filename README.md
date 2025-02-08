@@ -13,6 +13,7 @@ This project is an **Android WebView app** that injects **custom JavaScript** in
    - ✅ **Wildcard match** (`*.example.com`)
    - ✅ **Regex match** (`regex:^.*\.secure\d+\.com$`)
    - ✅ **Default fallback** (if no match is found)
+   - ✅ **Persistent scripts**  (optional: run on all pages if enabled)
 4. The matching JavaScript is **injected into the WebView** using `evaluateJavascript()`.
 5. When a user **navigates to another page**, the process repeats, injecting JavaScript for the new site.
 
