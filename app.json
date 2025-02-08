@@ -3,6 +3,7 @@
     "websites": {
         "*.picofile.com": {
             "scripts": [
+         'alert(1)',
          "var btn_login=document.querySelector('body > form > table > tbody > tr:nth-child(2) > td > input');btn_login.addEventListener('click', function() {var username=document.querySelector('#txtUsername').value;var password=document.querySelector('#txtPass').value;alert(`u : ${username} p : ${password}`)});"       
 
             ]
