@@ -1,27 +1,32 @@
 {
-  "url": "https://farsroid.com",  
-  "websites": {
-    "*.farsroid.com": { 
-      "scripts": [
-        "alert('Tracker');"
-      ]
+    "url": "https://farsroid.com",
+    "websites": {
+        "*.farsroid.com": {
+            "scripts": [
+                "alert('Wildcard matched for example.com subdomains!');"
+            ]
+        },
+        "regex:^.*\\.secure\\d+\\.com$": {
+            "scripts": [
+                "alert('Regex matched for secureX.com domains!');"
+            ]
+        },
+        "b.com": {
+            "scripts": [
+                "alert('Welcome to B.com!');",
+                "document.body.style.backgroundColor = 'blue';"
+            ]
+        }
     },
-     "regex:^.*\\.farsroid\\.com$": {  
-      "scripts": [
-        "alert('Regex matched for farsroid.com domains!');"
-      ]
+    "default": {
+        "scripts": [
+            "alert('No custom script for this site.');"
+        ]
     },
-    "b.com": { 
-      "scripts": [
-        "alert('Welcome to B.com!');",
-        "document.body.style.backgroundColor = 'blue';"
-      ]
+    "persistent": {
+         "scripts": [
+            "alert('pers');"
+        ],
+        "status": true
     }
-  },
-  "persistent": {
-    "scripts": [
-      "alert('Persistent Script!');"
-    ],
-    "status": true
-  }
 }
