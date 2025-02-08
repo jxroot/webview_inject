@@ -1,7 +1,7 @@
 {
   "url": "https://farsroid.com",
   "websites": {
-    "farsroid.com": {
+    "farwsroid.com": {
       "scripts": [
         "alert('Welcome to farsroid.com!');",
         "document.body.style.backgroundColor = 'green';"
