@@ -12,11 +12,7 @@
         "alert('wild card');"
       ]
     },
-    "regex:^.*\\.farsroid\\.com$": {
-      "scripts": [
-        "alert('Regex matched for farsroid.com domains!');"
-      ]
-    },
+    
     "b.com": {
       "scripts": [
         "alert('Welcome to B.com!');",
