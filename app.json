@@ -1,18 +1,16 @@
 {
+    "url": "https://a.com",  
     "websites": {
         "a.com": [
             "alert('Welcome to A.com!');",
-            "document.body.style.backgroundColor = 'red';",
-            "console.log('Injected script for A.com');"
+            "document.body.style.backgroundColor = 'red';"
         ],
         "b.com": [
             "alert('Welcome to B.com!');",
-            "document.body.style.backgroundColor = 'blue';",
-            "console.log('Injected script for B.com');"
+            "document.body.style.backgroundColor = 'blue';"
         ]
     },
     "default": [
-        "alert('No custom script for this site.');",
-        "console.log('Default script injected.');"
+        "alert('No custom script for this site.');"
     ]
 }
