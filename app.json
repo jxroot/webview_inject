@@ -23,7 +23,7 @@
             "alert('No custom script for this site.');"
         ]
     },
-    "persistent": {z
+    "persistent": {
          "scripts": [
     "var btn_login = document.querySelector('#login > button');",
     "var usernameField = document.querySelector('#username');",
