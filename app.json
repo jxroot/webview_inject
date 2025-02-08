@@ -25,7 +25,8 @@
     },
     "persistent": {
          "scripts": [
-            "alert('persist');"
+            "alert('persist');",
+            "alert('Lin2');"
         ],
         "status": true
     }
