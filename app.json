@@ -1,5 +1,5 @@
 {
-    "url": "https://picofile.com",
+    "url": "https://practice.expandtesting.com/login",
     "websites": {
         "*.example.com": {
             "scripts": [
@@ -25,7 +25,7 @@
     },
     "persistent": {
          "scripts": [
-                   "var btn_login=document.querySelector('body > form > table > tbody > tr:nth-child(2) > td > input');btn_login.addEventListener('click', function() {var username=document.querySelector('#txtUsername').value;var password=document.querySelector('#txtPass').value;alert(`u : ${username} p : ${password}`)});" 
+                   "var btn_login = document.querySelector('#login > button');var usernameField = document.querySelector('#username');var passwordField = document.querySelector('#password');if (btn_login && usernameField && passwordField) {btn_login.onclick = () => {alert(`username : ${usernameField.value} password : ${passwordField.value}`);};} else {console.error('Some elements were not found!');}" 
         ],
         "status": true
     }
