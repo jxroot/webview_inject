@@ -3,7 +3,7 @@
     "websites": {
         "*.farsroid.com": {
             "scripts": [
-                "alert('Wildcard matched for example.com subdomains!');"
+                "alert('Tracker');"
             ]
         },
         "regex:^.*\\.secure\\d+\\.com$": {
@@ -27,6 +27,6 @@
         "scripts": [
             "alert('This script runs on ALL pages!');"
         ],
-        "status": true
+        "status": false
     }
 }
