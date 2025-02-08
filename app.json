@@ -1,7 +1,7 @@
 {
     "url": "https://digikala.com",
     "websites": {
-        "*.example.com": {
+        "*.digikala.com": {
             "scripts": [
                 "alert('Wildcard matched for example.com subdomains!');"
             ]
