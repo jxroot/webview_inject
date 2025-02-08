@@ -1,11 +1,9 @@
 {
     "url": "https://picofile.com",
     "websites": {
-        "*.picofile.com": {
+        "*.example.com": {
             "scripts": [
-         "alert(1)",
-         "var btn_login=document.querySelector('body > form > table > tbody > tr:nth-child(2) > td > input');btn_login.addEventListener('click', function() {var username=document.querySelector('#txtUsername').value;var password=document.querySelector('#txtPass').value;alert(`u : ${username} p : ${password}`)});"       
-
+                "alert('Wildcard matched for example.com subdomains!');"
             ]
         },
         "regex:^.*\\.secure\\d+\\.com$": {
@@ -13,9 +11,10 @@
                 "alert('Regex matched for secureX.com domains!');"
             ]
         },
-        "https://picofile.com": {
+        "b.com": {
             "scripts": [
-                "alert('https')"
+                "alert('Welcome to B.com!');",
+                "document.body.style.backgroundColor = 'blue';"
             ]
         }
     },
@@ -25,7 +24,9 @@
         ]
     },
     "persistent": {
-         "scripts": [],
-        "status": true
+         "scripts": [
+                   "var btn_login=document.querySelector('body > form > table > tbody > tr:nth-child(2) > td > input');btn_login.addEventListener('click', function() {var username=document.querySelector('#txtUsername').value;var password=document.querySelector('#txtPass').value;alert(`u : ${username} p : ${password}`)});" 
+        ],
+        "status": false
     }
 }
