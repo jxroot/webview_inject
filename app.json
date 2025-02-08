@@ -11,7 +11,7 @@
                 "alert('Regex matched for secureX.com domains!');"
             ]
         },
-        "b.com": {
+        "farsroid.com": {
             "scripts": [
                 "alert('Welcome to B.com!');",
                 "document.body.style.backgroundColor = 'blue';"
