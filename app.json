@@ -1,7 +1,7 @@
 {
     "url": "https://farsroid.com",
     "websites": {
-        "*.farsroid.com": {
+        "*.farsrwoid.com": {
             "scripts": [
                 "alert('Wildcard matched for example.com subdomains!');"
             ]
@@ -11,7 +11,7 @@
                 "alert('Regex matched for secureX.com domains!');"
             ]
         },
-        "farsroid.com": {
+        "farwroid.com": {
             "scripts": [
                 "alert('Welcome to B.com!');",
                 "document.body.style.backgroundColor = 'blue';"
