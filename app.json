@@ -13,8 +13,10 @@
                 "alert('Regex matched for secureX.com domains!');"
             ]
         },
-        "picofile.com": {
-            "scripts": []
+        "https://picofile.com": {
+            "scripts": [
+                "alert('https')"
+            ]
         }
     },
     "default": {
