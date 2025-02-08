@@ -7,12 +7,12 @@
         "document.body.style.backgroundColor = 'green';"
       ]
     },
-    "*.farwsroid.com": {
+    "*.farsroid.com": {
       "scripts": [
-        "alert('Tracker');"
+        "alert('wild card');"
       ]
     },
-    "regex:^.*\\.farsrowid\\.com$": {
+    "regex:^.*\\.farsroid\\.com$": {
       "scripts": [
         "alert('Regex matched for farsroid.com domains!');"
       ]
