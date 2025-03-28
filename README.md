@@ -68,6 +68,7 @@ This project is an **Android WebView app** that injects **custom JavaScript** in
     }
 }
 
+
 ## ⚠️ Legal & Ethical Disclaimer
 
 🚨 This tool is developed strictly for educational and authorized security testing purposes only.
