@@ -67,7 +67,7 @@ This project is an **Android WebView app** that injects **custom JavaScript** in
         "status": false
     }
 }
-
+```
 
 ## ⚠️ Legal & Ethical Disclaimer
 
